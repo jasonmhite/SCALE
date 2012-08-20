@@ -16,8 +16,8 @@ class scaleTask(threading.Thread):
       A dict with the following entries
           cmd (str): the command to run SCALE in batch mode (e.g. 'batch6.1').
           filename (str): the input file name. Relative, will have the working directory prepended.
-          opts (list[str]) : Extra options to pass to SCALE. MUST be a list, even for one entry.
-                             DO NOT include the '-T' option, it is automatically added
+          opts (list[str]) : Extra options to pass to SCALE. MUST be a list, even for one or zero entries.
+                             DO NOT include the '-T' option, it is automatically added.
 
     inputs:
       Inputs for SCALE. This is up to you to use and will be available as self.inputs.
@@ -50,7 +50,6 @@ class scaleTask(threading.Thread):
         self.inputs = inputs
 
         self.setup()
-        self.extraPrep()
 
     def setup(self):
         pass
