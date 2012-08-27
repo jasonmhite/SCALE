@@ -37,7 +37,7 @@ class scaleTask(threading.Thread):
       --self.run() is executed--
       gather() : Collect results, e.g. copy outputs
 
-    Please overwrite setup and gather to use, then manually call .run().
+    Please overwrite setup and gather to use, then manually call .start().
     """
 
     def __init__(self, opts, inputs, cluster, clean=True):
