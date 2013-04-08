@@ -7,6 +7,7 @@ from IPython.parallel import Client
 import os
 
 "Test message"
+"Test message 2"
 
 try:
     os.mkdir('/dev/shm/scale')
