@@ -6,6 +6,8 @@ from itertools import islice
 from IPython.parallel import Client
 import os
 
+"Test message"
+
 try:
     os.mkdir('/dev/shm/scale')
 except OSError:
